@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
+// test class 에는 Transactional이 있는 경우 테스트작업 후 rollback 시킨다.
 @Transactional
 class MemberServiceIntergrationTest {
 
